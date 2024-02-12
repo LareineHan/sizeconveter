@@ -1,0 +1,26 @@
+{
+  "name": "sizeconverter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sizeConverter.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Lareine",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.8",
+    "@parcel/babel-preset-env": "^2.9.3",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.5.1"
+  },
+  "dependencies": {
+    "feather-icons": "^4.29.0",
+    "jquery": "^3.7.0",
+    "puppeteer": "^20.8.0",
+    "puppeteer-core": "^20.8.0"
+  }
+}

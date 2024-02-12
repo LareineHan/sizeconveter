@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Size Converter</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+  setDefaultSize();
+  var sourceRegionSelect = document.getElementById('source_region');
+  sourceRegionSelect.addEventListener('change', function (event) {
+    var selectedRegion = event.target.value;
+    populateSizes(selectedRegion, 'size-button');
+  });
+  var targetRegionSelect = document.getElementById('target_region');
+  targetRegionSelect.addEventListener('change', function () {
+    convert();
+  });
+});</script>
+      
+    <link rel="stylesheet" type="text/css" href="/styles.8986bff4.css">
+
+<script src="/styles.8986bff4.js"></script></head>
+<body>
+    <div class="app-container">
+        <h1>Shoe Size Converter</h1>
+        <div class="form-group">
+          <select id="source_region" onchange="populateSizes(this.value, 'size-button')"></select>
+          <i data-feather="arrow-right"></i>           
+          <select id="target_region"></select>
+        </div>
+        <div class="form-group size-buttons-container size-button"> 
+        <!-- 이곳에 사이즈 버튼들 디스플레이 -->
+        </div>
+        <div class="form-group">
+            <h2 id="output" class="placeholder">Conversion result will appear here</h2>
+        </div>
+    </div>
+
+    <script type="module" src="/sizeConverter.0b43c10c.js"></script>
+    <script>feather.replace();</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
+
